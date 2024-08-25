@@ -20,9 +20,9 @@ const Home = async () => {
           <Search />
         </div>
 
-      <div className="mt-6">
-        <h2>Recomendados</h2>
-        <div>
+      <div>
+        <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">Recomendados</h2>
+        <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
           {accessories.map((accessories)=>(
             <Itens key={accessories.id} accessories={accessories}/>
           ))}
