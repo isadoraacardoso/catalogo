@@ -9,27 +9,33 @@ const Home = async () => {
   const accessories = await db.accessories.findMany({})
   
   return (
-    <div>
+    <div >
       <div>
       {/* header */}
       <Header />
       </div>
 
       {/* BUSCA */}
-      <div className="mt-6">
+      <div className="mt-6 ml-2 mr-2">
           <Search />
         </div>
 
-      <div>
+      <div className="mt-6 mb-[4.5rem] ml-2 mr-2">
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">Recomendados</h2>
         <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
           {accessories.map((accessories)=>(
             <Itens key={accessories.id} accessories={accessories}/>
           ))}
         </div>
-      </div>
 
+      <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">Populares</h2>
+        <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
+          {accessories.map((accessories)=>(
+            <Itens key={accessories.id} accessories={accessories}/>
+          ))}
+        </div>
 
+        </div>
     </div>
   )
 }
