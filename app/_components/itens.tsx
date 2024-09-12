@@ -1,10 +1,13 @@
-import { Card, CardContent } from "@/components/ui/card";
+"use client"
+
 import { Accessories } from "@prisma/client";
+import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 import { Button } from "@/components/ui/button"
+import Link from "next/link";
 
 interface ItensProps{
-    accessories: Accessories;
+    accessories: Accessories
 }
 
 const Itens = ({accessories}: ItensProps) => {
@@ -25,10 +28,9 @@ const Itens = ({accessories}: ItensProps) => {
           <h3 className="truncate font-semibold">{accessories.name}</h3>
           <p className="truncate text-sm text-gray-400">{accessories.description}</p>
           <Button variant="secondary" className="mt-3 w-full" asChild>
-            Reservar
+            <Link rel="stylesheet" href={'/accessories/${accessories.id}'}>Reservar</Link>
           </Button>
         </div>
-        
             </CardContent>
         </Card>
     );

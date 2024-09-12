@@ -1,9 +1,10 @@
 import Header from "./_components/header"
-import Itens from "./_components/itens"
+import Accessories from "./_components/itens"
 import Search from "./_components/search"
 import { db } from "../lib/prisma"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
+import ItensDetailsPage from "./itens/page"
 
 const Home = async () => {
   const accessories = await db.accessories.findMany({})
@@ -24,14 +25,14 @@ const Home = async () => {
         <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">Recomendados</h2>
         <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
           {accessories.map((accessories)=>(
-            <Itens key={accessories.id} accessories={accessories}/>
+            <Accessories key={accessories.id} accessories={accessories}/>
           ))}
         </div>
 
       <h2 className="mb-3 mt-6 text-xs font-bold uppercase text-gray-400">Populares</h2>
         <div className="flex gap-4 overflow-auto [&::-webkit-scrollbar]:hidden">
           {accessories.map((accessories)=>(
-            <Itens key={accessories.id} accessories={accessories}/>
+            <Accessories key={accessories.id} accessories={accessories}/>
           ))}
         </div>
 
