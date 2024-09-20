@@ -29,7 +29,7 @@ const Itens = ({accessories}: ItensProps) => {
           <h3 className="truncate font-semibold">{accessories.name}</h3>
           <p className="truncate text-sm text-gray-400">{accessories.description}</p>
           <Button variant="secondary" className="mt-3 w-full" asChild>
-            <Link rel="stylesheet" href={'/accessories/${itens.id}'}>Reservar</Link>
+            <Link rel="stylesheet" href={`/itens/${accessories.id}`}>Reservar</Link>
           </Button>
         </div>
             </CardContent>

@@ -5,6 +5,7 @@ import { ChevronLeftIcon, MenuIcon, } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
+import SidebarSheet from "@/app/_components/sidebar-sheet"
 
 interface ItensDetailsPageProps {
   params: {
@@ -14,13 +15,13 @@ interface ItensDetailsPageProps {
 
 const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
   // chamar o meu banco de dados
-  const accessories = await db.accessories.findUnique({
+  const itens = await db.accessories.findUnique({
     where: {
       id: params.id,
     },
   })
 
-  if (!accessories) {
+  if (!itens) {
     return notFound()
   }
 
@@ -29,8 +30,8 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
       {/* IMAGEM */}
       <div className="relative h-[250px] w-full">
         <Image
-          alt={accessories.name}
-          src={accessories?.imageUrl}
+          alt={itens.name}
+          src={itens?.imageUrl}
           fill
           className="object-cover"
         />
@@ -56,20 +57,26 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
               <MenuIcon />
             </Button>
           </SheetTrigger>
+          <SidebarSheet />
         </Sheet>
       </div>
 
       {/* TÍTULO */}
       <div className="border-b border-solid p-5">
-        <h1 className="mb-3 text-xl font-bold">{accessories.name}</h1>
+        <h1 className="mb-3 text-xl font-bold">{itens.name}</h1>
       </div>
 
       {/* DESCRIÇÃO */}
       <div className="space-y-2 border-b border-solid p-5">
-        <h2 className="text-xs font-bold uppercase text-gray-400">Sobre nós</h2>
-        <p className="text-justify text-sm">{accessories?.description}</p>
+        <h2 className="text-xs font-bold uppercase text-gray-400">Descrição</h2>
+        <p className="text-justify text-sm">{itens?.description}</p>
       </div>
 
+      <div className="space-y-2 border-b border-solid p-5">
+      <Button variant="secondary" className="mt-3 w-full" asChild>
+        <Link rel="stylesheet" href={`http://wa.me/5535984450066?text=Ol%C3%A1,+tudo+bem`}>Reservar</Link>
+      </Button>
+      </div>
     </div>
   )
 }
