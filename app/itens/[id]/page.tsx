@@ -72,6 +72,17 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
         <p className="text-justify text-sm">{itens?.description}</p>
       </div>
 
+      {/* PREÇO */}
+      <div className="space-y-2 border-b border-solid p-5">
+        <h2 className="text-xs font-bold uppercase text-gray-400">Valor</h2>
+        <p className="text-sm font-bold text-primary">
+                {Intl.NumberFormat("pt-BR", {
+                  style: "currency",
+                  currency: "BRL",
+                }).format(Number(itens.price))}
+              </p>
+      </div>
+
       <div className="space-y-2 border-b border-solid p-5">
       <Button variant="secondary" className="mt-3 w-full" asChild>
         <Link rel="stylesheet" href={`http://wa.me/5535984450066?text=Ol%C3%A1,+tudo+bem`}>Reservar</Link>
