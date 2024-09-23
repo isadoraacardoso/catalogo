@@ -28,7 +28,7 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
   return (
     <div>
       {/* IMAGEM */}
-      <div className="relative h-[250px] w-full">
+      <div className="relative h-[500px] w-full">
         <Image
           alt={itens.name}
           src={itens?.imageUrl}
