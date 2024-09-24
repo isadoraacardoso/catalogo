@@ -35,7 +35,7 @@ const Itens = ({accessories}: ItensProps) => {
                 }).format(Number(accessories.price))}
               </p>
           <Button variant="secondary" className="mt-3 w-full" asChild>
-            <Link rel="stylesheet" href={`/itens/${accessories.id}`}>Reservar</Link>
+            <Link rel="stylesheet" href={`/itens/${accessories.id}`}>Eu quero!</Link>
           </Button>
         </div>
             </CardContent>

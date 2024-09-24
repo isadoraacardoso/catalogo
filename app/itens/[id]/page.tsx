@@ -6,6 +6,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import SidebarSheet from "@/app/_components/sidebar-sheet"
+import AccessoryButton from "@/app/_components/accessoryButton"; 
 
 interface ItensDetailsPageProps {
   params: {
@@ -84,9 +85,7 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
       </div>
 
       <div className="space-y-2 border-b border-solid p-5">
-      <Button variant="secondary" className="mt-3 w-full" asChild>
-        <Link rel="stylesheet" href={`http://wa.me/5535984450066?text=Ol%C3%A1,+tudo+bem`}>Reservar</Link>
-      </Button>
+      <AccessoryButton />
       </div>
     </div>
   )
