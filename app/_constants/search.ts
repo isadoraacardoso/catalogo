@@ -18,7 +18,7 @@ interface QuickSearchOption {
     },
     {
       imageUrl: "/anel.svg",
-      title: "Anél",
+      title: "Anel",
     },
     {
       imageUrl: "/tornozeleira.svg",
