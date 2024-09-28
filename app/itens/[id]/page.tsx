@@ -19,12 +19,14 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
   const itens = await db.accessories.findUnique({
     where: {
       id: params.id,
-    },
+    }
   })
 
   if (!itens) {
     return notFound()
   }
+
+
 
   return (
     <div>
