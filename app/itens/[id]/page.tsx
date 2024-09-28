@@ -15,6 +15,7 @@ interface ItensDetailsPageProps {
 }
 
 const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
+  try{
   // chamar o meu banco de dados
   const itens = await db.accessories.findUnique({
     where: {
@@ -90,7 +91,11 @@ const ItensDetailsPage = async ({ params }: ItensDetailsPageProps) => {
       <AccessoryButton />
       </div>
     </div>
-  )
+  ) } catch (error) {
+    // Se um erro ocorrer, ele será capturado aqui
+    console.error("Erro ao buscar os dados:", error);
+    return notFound();
+    }
 }
 
 export default ItensDetailsPage

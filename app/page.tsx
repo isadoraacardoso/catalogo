@@ -5,7 +5,7 @@ import { db } from "../lib/prisma"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
 import { quickSearchOptions } from "./_constants/search"
-import ItensDetailsPage from "./itens/page"
+import ItensDetailsPage from "./itens/[id]/page"
 import Link from "next/link"
 
 const Home = async () => {
