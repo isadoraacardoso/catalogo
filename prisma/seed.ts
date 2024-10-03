@@ -106,34 +106,34 @@ async function seedDatabase() {
       },
       {
         name: "Pulseira Para Berloques",
-        description: "Pulseira Para Berloques prata.",
+        description: "Pulseira Para Berloques prata, disponível no tamanho 18.",
         price: "58.90",
         imageUrl:
           "/pulseiraberloques.jpg",
       },
       {
-        name: "Pulseira 10 Mandamentos",
+        name: "Pulseira 10 Mandamentos Folheada",
         description: "Pulseira com os 10 Mandamentos folheada.",
         price: "38.00",
         imageUrl:
           "/pulseiramandamentos.jpg",
       },
       {
-        name: "Brinco Trevo",
+        name: "Brinco Trevo Folheado",
         description: "Par de Brincos Trevo folheado, na cor preta.",
         price: "27.90",
         imageUrl:
           "/brincotrevo.jpg",
       },
       {
-        name: "Trio de Brincos",
+        name: "Trio de Brincos Folheados",
         description: "Trio de brincos, sendo dois no formato Ponto de Luz e um no formato de coração, com tamanhos diferentes, folheado.",
         price: "39.90",
         imageUrl:
           "/triobrincos.jpg",
       },
       {
-        name: "Mini Argola",
+        name: "Brinco Mini Argola Folheado",
         description: "Um par de brincos no formato de argola trançada, folheado.",
         price: "16.90",
         imageUrl:
@@ -161,9 +161,9 @@ async function seedDatabase() {
           "/bracelete.jpg",
       },
       {
-        name: "Colar Choker (Folheado)",
-        description: "Colar Choker em corrente folheado.",
-        price: "49.90",
+        name: "Colar Choker Elos Folheado",
+        description: "Colar Choker Elos folheado.",
+        price: "38.95",
         imageUrl:
           "/choker.jpg",
       },
@@ -189,7 +189,7 @@ async function seedDatabase() {
           "/choker2.jpg",
       },
       {
-        name: "Colar Choker Fita",
+        name: "Colar Choker Fita Folheado",
         description: "Colar Choker Fita folheado.",
         price: "49.90",
         imageUrl:
@@ -252,7 +252,7 @@ async function seedDatabase() {
           "/colarcruzcravejado.jpg",
       },
       {
-        name: "Brinco Trevo",
+        name: "Brinco Trevo Folheado",
         description: "Brinco trevo folheado.",
         price: "27.90",
         imageUrl:
@@ -266,14 +266,14 @@ async function seedDatabase() {
           "/chokerbolinhass.jpg",
       },
       {
-        name: "Anel Solitário",
+        name: "Anel Solitário Folheado",
         description: "Anel solitário folheado, regulável.",
         price: "35.90",
         imageUrl:
           "/anelsolitariofolheado.jpg",
       },
       {
-        name: "Anel Solitário",
+        name: "Anel Solitário Prata",
         description: "Anel solitário prata, disponível na numeração 17.",
         price: "39.90",
         imageUrl:
@@ -288,7 +288,7 @@ async function seedDatabase() {
       },
       {
         name: "Anel Solitário",
-        description: "Anel solitário prata, disponível nas numerações 18, 19, 21 e 22.",
+        description: "Anel solitário prata, disponível nas numerações 19, 21 e 22.",
         price: "39.90",
         imageUrl:
           "/anelsolitario.jpg",
@@ -308,13 +308,6 @@ async function seedDatabase() {
           "/anelentrelaçado.jpg",
       },
       {
-        name: "Anel Prego Cravejado",
-        description: "Anel prego cravejado prata, disponível na numeração 13.",
-        price: "41.90",
-        imageUrl:
-          "/anelprego.jpg",
-      },
-      {
         name: "Anel Bolinhas",
         description: "Anel de bolinhas prata, disponível na numeração 17.",
         price: "34.90",
@@ -323,7 +316,7 @@ async function seedDatabase() {
       },
       {
         name: "Anel Torcido",
-        description: "Anel torcido prata, regulável.",
+        description: "Anel torcido prata, disponível na numeração 17.",
         price: "34.90",
         imageUrl:
           "/aneltorcido.jpg",
@@ -343,39 +336,102 @@ async function seedDatabase() {
           "/braceletenó.jpg",
       },
       {
-        name: "Colar Choker Riviera",
+        name: "Colar Choker Riviera Folheado",
         description: "Colar choker riviera folheado.",
-        price: "53.50",
+        price: "49,99",
         imageUrl:
           "/chokerrivierafolheadostrass.jpg",
       },
       {
-        name: "Bracelete Trançado",
+        name: "Bracelete Trançado Folheado",
         description: "Bracelete trançado folheado.",
         price: "42.90",
         imageUrl:
           "/braceletetrançado.jpg",
       },
       {
-        name: "Bracelete Liso",
+        name: "Bracelete Liso Folheado",
         description: "Bracelete liso folheado.",
         price: "42.90",
         imageUrl:
           "/braceleteliso.jpg",
       },
       {
-        name: "Bracelete Trançado Ponto de Luz",
+        name: "Bracelete Trançado Ponto de Luz Folheado",
         description: "Bracelete trançado com ponto de luz folheado.",
         price: "47.90",
         imageUrl:
           "/braceletetrançadopontodeluz.jpg",
       },
       {
-        name: "Bracelete Inspiração Cartier",
+        name: "Bracelete Inspiração Cartier Folheado",
         description: "Bracelete inspiração cartier folheado.",
         price: "68.90",
         imageUrl:
           "/braceletecartier.jpg",
+      },
+      {
+        name: "Colar Choker Dupla Folheado",
+        description: "Colar Choker Dupla Folheado.",
+        price: "47.90",
+        imageUrl:
+          "/chokerdupla.jpg",
+      },
+      {
+        name: "Colar Choker Pérolas",
+        description: "Colar Choker de Pérolas.",
+        price: "45.90",
+        imageUrl:
+          "/chokerperolas.jpg",
+      },
+      {
+        name: "Colar Duplo Folheado",
+        description: "Colar duplo folheado.",
+        price: "49.90",
+        imageUrl:
+          "/colarduplofolheado.jpg",
+      },
+      {
+        name: "Pulseira Riviera Folheada",
+        description: "Pulseira Riviera folheada.",
+        price: "39.90",
+        imageUrl:
+          "/pulseirariviera.jpg",
+      },
+      {
+        name: "Pulseira Bolinhas",
+        description: "Pulseira Bolinhas prata.",
+        price: "39.90",
+        imageUrl:
+          "/pulseirabolinhas.jpg",
+      },
+      {
+        name: "Bracelete Liso Folheado",
+        description: "Bracelete Liso Folheado.",
+        price: "42.90",
+        imageUrl:
+          "/braceletelisofolheado.jpg",
+      },
+      {
+        name: "Brinco Coração Vazado",
+        description: "Brinco Coração Vazado Prata.",
+        price: "12.90",
+        imageUrl:
+          "/brincocoracaovazado.jpg",
+      },
+      {
+        name: "Brinco Flor Folheado",
+        description: "Brinco Flor Folheado.",
+        price: "43.80",
+        imageUrl:
+          "/brincoflor.jpg",
+      },
+      {
+        name: "Pulseira Fita Folheada",
+        description: "Pulseira Fita Folheada.",
+        price: "38.90",
+        imageUrl:
+          "/pulseirafitafolheada.jpg",
       }
     ];
 
